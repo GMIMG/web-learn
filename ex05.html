@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <style>
-        html { background: #121212; color: white}
+        html,body { background: #121212; color: white}
     table{
         text-align: center;
         
     }
+    input { margin: 0 10px; color: black}
     .gender{
         text-align: left;
+    }
+    .wrapper{
+        max-width:  600px;
+        margin-left:auto;
+        margin-right:auto;
     }
     </style>
     <meta charset="UTF-8">
@@ -17,10 +24,11 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="wrapper">
     <h1>Customer Management</h1>
     <img src="customers.png" width="100%" alt="이미지">
-    <table border=1> 
-        <caption> Customer </caption>
+    <table border=2> 
+        <caption>  </caption>
         <tr>
             <td>Index</td>
             <td>Name</td>
@@ -39,18 +47,20 @@
             <td><input type = "text" name = "birth" size = "6"></td>
         </tr>
     </table>
-    <button>이전</button>
-    <button>다음</button>
-
-    <button>수정</button>
-    <button>삭제</button>
-
+    <br>
     <input type = "text" name = "find" size = "2" value="index">
-    <button>찾아가기</button>
+    <button type="button" class="btn btn-default">찾아가기</button>
+    <button type="button" class="btn btn-info">이전</button>
+    <button type="button" class="btn btn-info">다음</button>
+    <button type="button" class="btn btn-warning">수정</button>
+    <button type="button" class="btn btn-danger">삭제</button>
+
+
+
 
     <br><br><br>
 
-    <table border=1> 
+    <table border=2> 
         <caption> 생성테이블 </caption>
         <tr>
             <td>Name</td>
@@ -68,10 +78,9 @@
             <td><input type = "text" name = "inputbirth" size = "6"></td>
         </tr>
     </table>
-
-
-    <button>생성</button>
-
-    <button>저장</button>
+    <br>
+    <button type="button" class="btn btn-primary">생성</button>
+    <button type="button" class="btn btn-success">저장</button>
+</div>
 </body>
 </html>
