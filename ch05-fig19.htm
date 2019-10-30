@@ -1,0 +1,97 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+  <title> Customer Management </title>
+   <style>
+      *  { box-sizing: border-box; }
+      html {background: #000}
+      #header  { background: #121212; color: white; height: 60px; line-height: 60px; font-size: 30px;}
+      nav { position: static; background: #fff;}
+      #menu  { position: static; background: #343434; color: white; height:30px; text-align: right; padding-right: 30px} 
+      #menu  a { color: white;} 
+      #content  { background: ghostwhite; float: left;  width: 80%; } 
+      #side-left, #side-right  { background: Gainsboro; } 
+      #side-right { float: right; width: 20%; height: 730px;}
+      #footer  { background: darkgray; clear : both; height:30px; line-height:30px; }  
+      iframe  { margin: 0px 0px;  padding: 0px 0px;  border: 0px;  
+               float: right; width: 100%;  height: 730px;}  
+      #header, #side-left, #side-right, #footer { text-align: center; } 
+      /* 드롭다운 서브메뉴 */
+      ul { margin :0; position: static; }
+      li  { display: inline; }
+      li a  { color: black;  text-decoration: none; padding: 0 10px; }  
+      li a:hover  { background: darkgray;  color: black; }
+      li.dropdown  { display: inline-block; line-height: 30px;}
+      .submenu  { display: none;  position: absolute;
+         background-color: gray; 
+         box-shadow: 0px 8px 16px 0px  rgba(0,0,0,0.8); }
+
+      .submenu a  { display: block;  color: black;  padding: 12px 16px;
+         text-decoration: none; text-align: left; }
+      
+      .submenu a:hover  { background: lavender;  color: black;  } 
+      .dropdown:hover .submenu  { display: block;  color: black;  }
+   </style>
+</head>
+<body>    
+<div id="container">
+   <div id="header"> Customer Management </div>
+      <nav>
+      <ul id="menu"> 
+         <li class="dropdown">
+            <a href="#home" class="mainmenu">Home</a>
+            <div class="submenu">
+               <a href="#">menu 01</a> 
+               <a href="#">menu 02</a>
+            </div>
+         </li>
+         <li class="dropdown">
+            <a href="#home" class="mainmenu">Menu 1</a>
+            <div class="submenu">
+               <a href="#">menu 11</a>
+               <a href="#">menu 12</a>
+            </div>
+         </li>
+         <li class="dropdown">
+            <a href="" class="mainmenu">Menu 2</a>
+            <div class="submenu">
+                  <a href="#">menu 21</a> 
+                  <a href="#">menu 22</a> 
+                  <a href="#">menu 23</a>
+            </div>
+         </li>
+         <li class="dropdown">
+            <a href="#home" class="mainmenu">Menu 3</a>
+            <div class="submenu">   
+                  <a href="#">menu 31</a>   
+                  <a href="#">menu 32</a>   
+                  <a href="#">menu 33</a>   
+            </div>
+         </li>
+      </ul>
+   </nav>
+   <div id="content">
+      <iframe  src="ex05.html" name="f1" seamless></iframe>
+   </div>
+   <div id="side-right"> 참고내용
+      <ul>
+         <li> 참고내용 1 </li> 
+         <li> 참고내용 2 </li>
+         <li> 참고내용 3 </li> 
+         <li> 참고내용 4 </li>
+      </ul>  
+   </div>
+   <div id="footer"> 문의 : 02-0000-0000, &nbsp;&nbsp; &copyright; &nbsp;웹-페이지 개발자  </div> 
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
