@@ -12,6 +12,5 @@
 	<c:if test="${not empty param.name}">
 		<p>Name: ${param.name}</p>
 	</c:if>
-	<a href="./0home.htm">SWEET HOME</a>
 </body>
 </html>
